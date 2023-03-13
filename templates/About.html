@@ -93,7 +93,7 @@
           <div class="main-header__wrapper-inner">
             <div class="main-header__logo">
               <a href="index.html"
-                ><img src="assets/images/resources/logo-1.png" alt=""
+                ><img src="{% static 'images/logo-1.png' %}" alt=""
               /></a>
             </div>
             <div class="main-header__menu-box">
@@ -247,12 +247,9 @@
 
       <!--Page Header Start-->
       <section class="page-header">
-        <div
-          class="page-header-bg"
-          style="
-            background-image: url(assets/images/backgrounds/page-header-bg.jpg);
-          "
-        ></div>
+        <div class="page-header-bg">
+          <img src="{% static 'images/page-header-bg.jpg' %}" alt="" />
+        </div>
         <div class="container">
           <div class="page-header__inner">
             <ul class="thm-breadcrumb list-unstyled">
