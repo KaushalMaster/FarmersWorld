@@ -49,28 +49,20 @@ class product_details(models.Model):
 
 
 class farmer_order(models.Model):
-    # o_fid = # TODO:@KaushalMaster CHECK IF o_fid IN farmer_details
+    o_fid = models.CharField()
     o_id = models.AutoField()
-
-    def __str__(self) -> str:
-        return 'f_name'  # TODO:@KaushalMaster GET f_name USING o_fid
-
-
-class order_product(models.Model):
-    # o_id = # TODO:@KaushalMaster FOR EACH ORDER IN farmer_order
-    # o_pid = models. # TODO:@KaushalMaster FOREIGN KEY
+    o_pid = models.CharField()
     o_qty = models.PositiveIntegerField()
 
     def __str__(self) -> str:
-        return 'p_name'  # TODO:@KaushalMaster GET p_name USING o_pid
+        return self.o_fid
 
 
 class payment_details(models.Model):
     pmt_id = models.AutoField()
-    # pmt_oid = # TODO:@KaushalMaster CHECK IF pmt_oid IN farmer_order
+    pmt_oid = models.CharField()
     pmt_amt = models.FloatField()
-    # pmt_cid = # TODO:@KaushalMaster CHECK IF pmt_cid IN customer_details
+    pmt_cid = models.CharField()
 
     def __str__(self) -> str:
-        # TODO:@KaushalMaster GET c_name USING pmt_cid
-        return str(self.pmt_id) + 'c_name'
+        return self.pmt_id
