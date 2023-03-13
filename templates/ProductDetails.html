@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact || Agrion || Agrion HTML 5 Template</title>
+    <title>Product Details || Agrion || Agrion HTML 5 Template</title>
     <!-- favicons Icons -->
     <link
       rel="apple-touch-icon"
@@ -83,6 +84,7 @@
     <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/agrion.css" />
@@ -380,7 +382,7 @@
                                 </li>
                               </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown current">
                               <a href="#">Shop</a>
                               <ul class="shadow-box">
                                 <li><a href="products.html">Products</a></li>
@@ -393,7 +395,7 @@
                                 <li><a href="checkout.html">Checkout</a></li>
                               </ul>
                             </li>
-                            <li class="current">
+                            <li>
                               <a href="contact.html">Contact</a>
                             </li>
                           </ul>
@@ -462,109 +464,264 @@
             <ul class="thm-breadcrumb list-unstyled">
               <li><a href="index.html">Home</a></li>
               <li><span>/</span></li>
-              <li>Contact</li>
+              <li>Shop</li>
             </ul>
-            <h2>contact us</h2>
+            <h2>Product Details</h2>
           </div>
         </div>
       </section>
       <!--Page Header End-->
 
-      <!--Google Map Start-->
-      <section class="google-map">
+      <!--Product Details Start-->
+      <section class="product-details">
         <div class="container">
-          <div class="google-map-box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-              class="google-map__one"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="contact-details">
-            <div class="row">
-              <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="contact-details__single">
-                  <div class="contact-details__icon">
-                    <span class="icon-help"></span>
-                  </div>
-                  <div class="contact-details__text">
-                    <p>Have Question?</p>
-                    <h3><a href="tel:9288006802">Free +92 (8800) 6802</a></h3>
-                  </div>
+          <div class="row">
+            <div class="col-lg-6 col-xl-6">
+              <div class="product-details__img">
+                <img
+                  src="assets/images/shop/product-details-img-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-6">
+              <div class="product-details__top">
+                <h3 class="product-details__title">
+                  Brown Bread <span>$23.00</span>
+                </h3>
+              </div>
+              <div class="product-details__reveiw">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>2 Customer Reviews</span>
+              </div>
+              <div class="product-details__content">
+                <p class="product-details__content-text1">
+                  Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis
+                  des mauris commodo venenatis ligula commodo leez sed blandit
+                  convallis dignissim onec vel pellentesque neque.
+                </p>
+                <p class="product-details__content-text2">
+                  REF. 4231/406 <br />
+                  Available in store
+                </p>
+              </div>
+
+              <div class="product-details__quantity">
+                <h3 class="product-details__quantity-title">Choose Quantity</h3>
+                <div class="quantity-box">
+                  <button type="button" class="sub">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  <input type="number" id="1" value="1" />
+                  <button type="button" class="add">
+                    <i class="fa fa-plus"></i>
+                  </button>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="contact-details__single">
-                  <div class="contact-details__icon">
-                    <span class="icon-mailbox"></span>
-                  </div>
-                  <div class="contact-details__text">
-                    <p>Write Email</p>
-                    <h3>
-                      <a href="mailto:needhelp@company.com"
-                        >needhelp@company.com</a
-                      >
-                    </h3>
-                  </div>
+
+              <div class="product-details__buttons">
+                <div class="product-details__buttons-1">
+                  <a href="cart.html" class="thm-btn"
+                    >Add to Cart <i class="icon-right-arrow"></i
+                  ></a>
+                </div>
+                <div class="product-details__buttons-2">
+                  <a href="product-details.html" class="thm-btn"
+                    >Add to Wislist <i class="icon-right-arrow"></i
+                  ></a>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-6 col-md-6">
-                <div
-                  class="contact-details__single contact-details__single-last"
-                >
-                  <div class="contact-details__icon">
-                    <span class="icon-maps-and-flags"></span>
-                  </div>
-                  <div class="contact-details__text">
-                    <p>Visit Office</p>
-                    <h3>30 Broklyn Golden Street. USA</h3>
-                  </div>
+              <div class="product-details__social">
+                <div class="title">
+                  <h3>Share with Friends</h3>
                 </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="contact-details__single">
-                  <div class="contact-details__social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
+                <div class="product-details__social-link">
+                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-facebook"></span></a>
+                  <a href="#"><span class="fab fa-pinterest-p"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Google Map End-->
+      <!--Product Details End-->
 
-      <!--Contact Two Start-->
-      <section class="contact-two">
-        <div class="contact-two__shape-1 float-bob-x">
-          <img src="assets/images/shapes/contact-two-shape-1.png" alt="" />
-        </div>
+      <!--Product Description Start-->
+      <section class="product-description">
         <div class="container">
-          <div class="section-title text-center">
-            <span class="section-title__tagline">Write a Message</span>
-            <h2 class="section-title__title">Always here to help you</h2>
-            <div class="section-title__icon">
-              <img src="assets/images/icon/section-title-icon-1.png" alt="" />
-            </div>
+          <h3 class="product-description__title">Description</h3>
+          <p class="product-description__text1">
+            Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum.
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have alteration in some injected or words which don't
+            look even slightly believable. If you are going to use a passage of
+            Lorem Ipsum, you need to be sure there isn't anything embarrang
+            hidden in the middle of text.
+          </p>
+          <div class="product-description__list">
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <span class="icon-right-arrow"></span> Nam at elit nec neque
+                  suscipit gravida.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="icon-right-arrow"></span> Aenean egestas orci eu
+                  maximus tincidunt.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="icon-right-arrow"></span> Curabitur vel turpis id
+                  tellus cursus laoreet.
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="contact-two__form-box">
+          <p class="product-description__tex2">
+            All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as necessary, making this the first true generator
+            on the Internet. It uses a dictionary of over 200 Latin words,
+            combined with a handful of model sentence structures, to generate
+            Lorem Ipsum which looks reasonable.
+          </p>
+        </div>
+      </section>
+      <!--Product Description End-->
+
+      <!--Review One Start-->
+      <section class="review-one">
+        <div class="container">
+          <div class="comments-area">
+            <div class="review-one__title">
+              <h3>2 Reviews</h3>
+            </div>
+            <!--Start Comment Box-->
+            <div class="comment-box">
+              <div class="comment">
+                <div class="author-thumb">
+                  <figure class="thumb">
+                    <img src="assets/images/shop/review-1-1.jpg" alt="" />
+                  </figure>
+                </div>
+
+                <div class="review-one__content">
+                  <div class="review-one__content-top">
+                    <div class="info">
+                      <h2>Kevin Martin <span>20 July, 2022 . 4:00 pm</span></h2>
+                    </div>
+                    <div class="reply-btn">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-one__content-bottom">
+                    <p>
+                      It has survived not only five centuries, but also the leap
+                      into electronic typesetting unchanged. It was popularised
+                      in the sheets containing lorem ipsum is simply free text.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Vestibulum
+                      sollicitudin varius mauris non dignissim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Comment Box-->
+
+            <!--Start Comment Box-->
+            <div class="comment-box">
+              <div class="comment">
+                <div class="author-thumb">
+                  <figure class="thumb">
+                    <img src="assets/images/shop/review-1-2.jpg" alt="" />
+                  </figure>
+                </div>
+
+                <div class="review-one__content">
+                  <div class="review-one__content-top">
+                    <div class="info">
+                      <h2>Sarah Albert <span>20 July, 2022 . 4:00 pm</span></h2>
+                    </div>
+                    <div class="reply-btn">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+
+                  <div class="review-one__content-bottom">
+                    <p>
+                      It has survived not only five centuries, but also the leap
+                      into electronic typesetting unchanged. It was popularised
+                      in the sheets containing lorem ipsum is simply free text.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Vestibulum
+                      sollicitudin varius mauris non dignissim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Comment Box-->
+          </div>
+        </div>
+      </section>
+      <!--Review One End-->
+
+      <!--Start Review Form-->
+      <section class="review-form-one">
+        <div class="container">
+          <div class="review-form-one__inner">
+            <h3 class="review-form-one__title">Add a Review</h3>
+            <div class="review-form-one__rate-box">
+              <p class="review-form-one__rate-text">Rate this Product?</p>
+              <div class="review-form-one__rate">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
             <form
               action="https://layerdrops.com/agrionhtml/main-html/assets/inc/sendemail.php"
-              class="contact-two__form contact-form-validated"
+              class="review-form-one__form contact-form-validated"
               novalidate="novalidate"
             >
               <div class="row">
-                <div class="col-xl-6">
-                  <div class="contact-form__input-box">
+                <div class="col-xl-12">
+                  <div class="review-form-one__input-box text-message-box">
+                    <textarea
+                      name="message"
+                      placeholder="Write a Comment"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                  <div class="review-form-one__input-box">
                     <input type="text" placeholder="Your Name" name="name" />
                   </div>
                 </div>
-                <div class="col-xl-6">
-                  <div class="contact-form__input-box">
+                <div class="col-xl-6 col-lg-6">
+                  <div class="review-form-one__input-box">
                     <input
                       type="email"
                       placeholder="Email Address"
@@ -572,41 +729,19 @@
                     />
                   </div>
                 </div>
-                <div class="col-xl-6">
-                  <div class="contact-form__input-box">
-                    <input
-                      type="text"
-                      placeholder="Phone"
-                      name="Phone Number"
-                    />
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="contact-form__input-box">
-                    <input type="text" placeholder="Subject" name="Subject" />
-                  </div>
-                </div>
               </div>
               <div class="row">
                 <div class="col-xl-12">
-                  <div class="contact-form__input-box text-message-box">
-                    <textarea
-                      name="message"
-                      placeholder="Write a Comment"
-                    ></textarea>
-                  </div>
-                  <div class="contact-form__btn-box">
-                    <a href="about.html" class="thm-btn contact-two__btn"
-                      >Send a Message<i class="icon-right-arrow"></i>
-                    </a>
-                  </div>
+                  <button type="submit" class="thm-btn review-form-one__btn">
+                    Submit a Review <i class="icon-right-arrow"></i>
+                  </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </section>
-      <!--Contact Two End-->
+      <!--End Review Form-->
 
       <!--Site Footer Start-->
       <footer class="site-footer">
@@ -876,8 +1011,11 @@
     <script src="assets/vendors/timepicker/timePicker.js"></script>
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
 
     <!-- template js -->
     <script src="assets/js/agrion.js"></script>
   </body>
+
+  
 </html>
