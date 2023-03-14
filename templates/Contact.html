@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -607,12 +608,12 @@
         <div class="site-footer__top">
           <div class="container">
             <div class="site-footer__top-inner">
-              <div
-                class="site-footer-shape-1 float-bob-x"
-                style="
-                  background-image: url(assets/images/shapes/site-footer-shape-1.png);
-                "
-              ></div>
+              <div class="site-footer-shape-1 float-bob-x">
+                <img
+                  src="{% static 'images/site-footer-shape-1.png' %}"
+                  alt=""
+                />
+              </div>
               <div class="row">
                 <div
                   class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
@@ -622,7 +623,7 @@
                     <div class="footer-widget__logo">
                       <a href="index.html"
                         ><img
-                          src="assets/images/resources/footer-logo.png"
+                          src="{% static 'images/footer-logo.png' %}"
                           alt=""
                       /></a>
                     </div>
