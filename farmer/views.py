@@ -16,8 +16,8 @@ def Products(request):
     products = product_details.objects.all()
 
     print(products)
-    farmer_city = request.POST.get('search')
-    farmers = farmer_details.objects.filter(f_city=farmer_city)
+    search_query = request.POST.get('search submit')
+    farmers = farmer_details.objects.filter(f_city=search_query)
 
     print(farmers)
 
@@ -25,7 +25,6 @@ def Products(request):
         'products': products,
         'farmers': farmers
     })
-
 
 def Contact(request):
     return render(request, 'Contact.html')
