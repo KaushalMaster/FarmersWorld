@@ -144,7 +144,7 @@
                           ></a>
                           <ul class="main-menu__list">
                             <li class="dropdown megamenu">
-                              <a href="index.html">Home </a>
+                              <a href="{% url 'index' %}">Home </a>
                               <ul></ul>
                             </li>
                             <li>
@@ -165,7 +165,7 @@
                               </ul> -->
                             </li>
                             <li>
-                              <a href="contact.html">Contact</a>
+                              <a href="{% url 'Contact' %}">Contact</a>
                             </li>
                           </ul>
                         </div>
@@ -231,7 +231,7 @@
         <div class="container">
           <div class="page-header__inner">
             <ul class="thm-breadcrumb list-unstyled">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="{% url 'index' %}">Home</a></li>
               <li><span>/</span></li>
               <li>Shop</li>
             </ul>
@@ -527,10 +527,18 @@
       <div class="search-popup__overlay search-toggler"></div>
       <!-- /.search-popup__overlay -->
       <div class="search-popup__content">
-        <form action="#">
+        <form action="{% url 'Products' %}">
+          {% csrf_token %}
           <label for="search" class="sr-only">search here</label
           ><!-- /.sr-only -->
-          <input type="text" id="search" placeholder="Search Here..." />
+          <input
+            type="text"
+            id="search"
+            placeholder="Search Here..."
+            name="search"
+          />
+          {% for farmer in farmers %} {{farmer.f_name}} {{farmer.l_name}}
+          {{farmer.f_address}} {{farmer.f_contact}} {% endfor %}
           <button type="submit" aria-label="search submit" class="thm-btn">
             <i class="icon-magnifying-glass"></i>
           </button>

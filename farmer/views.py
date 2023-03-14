@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import product_details
+from .models import product_details, farmer_details
 
 # Create your views here.
 
@@ -14,9 +14,16 @@ def About(request):
 
 def Products(request):
     products = product_details.objects.all()
+
     print(products)
+    farmer_city = request.POST.get('search')
+    farmers = farmer_details.objects.filter(f_city=farmer_city)
+
+    print(farmers)
+
     return render(request, 'Products.html', {
-        'products': products
+        'products': products,
+        'farmers': farmers
     })
 
 
