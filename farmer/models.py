@@ -44,7 +44,7 @@ class product_details(models.Model):
     p_name = models.CharField(max_length=25)
     p_price = models.FloatField()
     p_type = models.CharField(max_length=25)
-    p_img = models.ImageField()
+    p_img = models.ImageField(upload_to='media', default='')
     p_desc = models.CharField(max_length=100)
     p_isAvailable = models.BooleanField()
 
